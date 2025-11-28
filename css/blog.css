@@ -6,7 +6,7 @@ body {
   color: #000;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 8px; /* keep hero clear of fixed navbar */
+  /* padding-top: 8px; keep hero clear of fixed navbar */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -969,17 +969,4 @@ body {
   font-family: "Poppins";
 }
 
-@media (max-width: 992px) {
-  .hero-stats {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-}
 
-@media (max-width: 576px) {
-  .hero-image img {
-    width: 220px;
-    margin-top: 4rem;
-  }
-}
