@@ -1040,7 +1040,7 @@ img {
   }
 
   .about-image {
-    order: -1;
+    order: 1;
   }
 }
 
@@ -2701,6 +2701,11 @@ img {
     overflow-x: hidden;
     width: 100%;
   }
+  .hero-subtitle{
+    font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+  }
 
   .hero-visual {
     order: -1;
@@ -2709,9 +2714,10 @@ img {
     text-align: center;
   } */
   .hero-stats {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     gap: 1.5rem;
-    align-items: center;
+
   }
   .hero-buttons {
     justify-content: center;
@@ -2911,7 +2917,7 @@ img {
   }
 
   .hero-stats {
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 0.8rem;
     margin-bottom: 1.5rem;
   }
