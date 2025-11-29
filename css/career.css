@@ -145,6 +145,8 @@ body {
   padding: 40px 20px; /* Increased top and bottom padding */
   background: #0a0f29; /* Dark background */
   color: white;
+  padding-bottom: 100px;
+  margin-bottom: 2rem;
 }
 
 /* Culture Title */
@@ -278,6 +280,7 @@ body {
 
   .graphura-culture {
     padding: 60px 24px; 
+    margin-bottom: 2rem;
   }
   .culture-grid {
     grid-template-columns: 1fr;
