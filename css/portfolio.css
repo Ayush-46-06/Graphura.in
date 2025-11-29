@@ -98,6 +98,16 @@ body {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 480px) {
+  #projects h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+
+
 .project-heading h3 {
   color: black;
   text-align: center;
@@ -106,26 +116,25 @@ body {
   margin: 1rem;
 }
 
-/* .project-heading{
-      padding: 2rem;
-      border: 2rem solid #0a0f29;
-    } */
 
 .portfolio-btn .port-menu {
-  display: grid;
-  grid-template-columns: 1fr; /* Default: 1 column */
-  gap: 2rem;
-  list-style: none;
-  margin: 2rem auto;
-  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping if screen too narrow */
+  justify-content: center; /* center buttons horizontally, optional */
+  gap: 1rem; /* space between buttons */
   padding: 0;
+  margin: 2rem auto;
+  list-style: none;
+}
+
+.portfolio-btn .port-item {
+  /* optional: to force each item to shrink/grow */
+  flex: 0 1 auto;
 }
 
 .portfolio-btn .nav-link {
+  display: inline-block; /* ensure link behaves like button-box */
   padding: 10px 15px;
-  height: 40px;
-  width: 100%; /* Make width fluid instead of fixed 150px */
-  max-width: 150px; /* Optional max-width */
   text-align: center;
   background-color: #fff;
   color: #0a0f29;
@@ -141,39 +150,14 @@ body {
   border-color: #fff;
 }
 
-/* ========== Responsive ========== */
-
-/* Mobile / small screens — up to 767px: 2 columns */
-@media (max-width: 767px) {
-  .portfolio-btn .port-menu {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: none;
-    padding: 0 1rem;
-  }
-}
-
-/* Tablet & small desktop — from 768px up: 1 column again */
-@media (min-width: 768px) {
-  .portfolio-btn .port-menu {
-    grid-template-columns: repeat(5, 1fr);
-    max-width: none;
-    padding: 0;
-    gap: 0.1rem;
-  }
-}
-
-/* Large desktop (or very wide screen) — from 1024px up: 5 columns */
-@media (min-width: 1024px) {
-  .portfolio-btn .port-menu {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-  }
-
+/* Optional: adjust padding / font for smaller screens for better fit */
+@media (max-width: 480px) {
   .portfolio-btn .nav-link {
-    padding: 12px 20px;
-    /* width can stay fluid or be adjusted here */
+    padding: 6px 10px;
+    font-size: 10px;
   }
 }
+
 
 .project-grid {
   display: grid;
@@ -320,10 +304,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 2fr));
   gap: 1rem;
+  margin-left: 6rem;
 
-  /* margin: 3.4rem; */
-  /* border: 0.2rem solid ; */
-  /* background-color: palegreen; */
 }
 
 .project-logo-card {
@@ -332,7 +314,6 @@ body {
   border: 2px solid #d4af37;
   border-radius: 8px;
   overflow: hidden;
-  /* background-color: palegreen; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -449,6 +430,11 @@ body {
   }
 }
 
+
+
+
+
+#projects h2
 
 /* Css Added from my side  */
 
@@ -813,14 +799,14 @@ body {
 /* Blog Hero Stats */
 .blog-hero-stats {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 3rem;
   animation: slideInLeft 1s ease 1.1s both;
   will-change: transform, opacity;
 }
 
 .blog-hero .stat-item {
-  width: 150px;
+  /* width: 150px; */
   text-align: center;
 }
 
@@ -1339,3 +1325,23 @@ body {
     border-radius: 12px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
