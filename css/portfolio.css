@@ -298,6 +298,10 @@ body {
   }
 }
 
+
+
+
+
 /* Logo design  css*/
 
 .project-logo-grid {
@@ -369,10 +373,11 @@ body {
   }
 }
 @media (max-width: 474px) {
-  .project-logo-grid {
-    /* margin: 3rem; */
-    padding-left: 3rem;
-  }
+    .project-logo-grid {
+        padding-left: 1px;
+        margin-left: 2rem;
+    }
+
 
   .project-grid {
     margin: 3rem;
@@ -434,6 +439,7 @@ body {
 
 
 
+<<<<<<< HEAD
 #projects h2
 
 /* Css Added from my side  */
@@ -457,3 +463,5 @@ body {
   padding-top: 8rem;
   /* margin-top: 10rem; */
 }
+=======
+>>>>>>> b992e98ae6cb08cbe54ecb6ff0b88bcc9273f369
